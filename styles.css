@@ -1,0 +1,235 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100; 
+    margin: 0;
+    background-color: orchid;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+.bg-grunnur {
+    background-color: rgb(246, 221, 221);
+    display: grid;
+    padding: 0 .5rem;
+}
+
+.innerlinks {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient( orchid, rgb(229, 116, 225), rgb(217, 128, 214), rgb(217, 147, 215), rgb(206, 153, 204));
+}
+.innerlinks a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding: .3rem 1rem ;
+  text-align: center;
+  
+}
+.innerlinks a:visited {
+  color: black;
+}
+.innerlinks a:hover, .innerlinks a:active {
+ color: darkblue;
+}
+
+footer {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer ul{
+  list-style: none;
+}
+a, footer a {
+  color: white;
+}
+footer a {
+  line-height: 1.5;
+}
+footer a:visited {
+  color: black;
+}
+footer a:active, .footer a:hover {
+  color: darkblue;
+
+}
+
+.center {
+  text-align: center;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 0;
+  row-gap: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gluggi {
+  width:100%;
+  height:10.5rem; 
+  margin: auto;
+  padding: 1rem;
+}
+
+.yt {
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 20rem) {
+  .gluggi {
+    height:13rem; 
+    width: 21rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .kort {
+    width: 100%;
+    height:15.75rem; 
+  }
+  .col-2 {
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width:37.5rem) {
+  .gluggi {
+    height:15rem; 
+    width: 20rem;
+  }
+  .innerlinks {
+      flex-direction: row;
+      flex-flow: wrap;
+      justify-content: space-around;
+  }  
+  .innerlinks a:link {
+      border-bottom: 0;
+  }
+  header h1 {
+      font-size: 2.5rem;
+      padding: 0 3rem;
+  }
+  .kort {
+    height:19.7rem; 
+  }
+  .col-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 0;
+    row-gap: 0;
+  }
+}
+
+@media screen and (min-width:48rem) {
+  header h1 {
+      font-size: 3rem;
+      padding: 0 5rem;
+  }
+  .gluggi {
+    height:20rem;  
+    width: 24rem;
+  }
+  footer {
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .kort {
+    height:28.2rem; 
+    width: 27rem;
+  }
+  .col-3-myndir{
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+}
+
+@media screen and (min-width:60rem) {
+  .gluggi {
+    height:20rem; 
+    width: 28rem;
+  }
+  .container{
+      max-width: 60rem;
+      margin: auto;
+  } 
+  .innerlinks {
+      padding: .5rem 1rem 1rem 1rem;
+  }
+  header h1 {
+      font-size: 5rem;
+      padding: 0 7rem;
+      margin: 1rem 0;
+      line-height: 1.1;
+  }
+  .col-3-myndir {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    row-gap: 1rem;
+}
+}
+
+/* grid viðmið (breakpoint) 80rem = 1280px +*/
+@media screen and (min-width:80rem) {
+  .gluggi {  
+    height:30rem; 
+    width: 40rem; 
+  }
+  .container {
+      max-width: 80rem;
+  }
+  .col-4 {
+      gap: 2rem;
+  }
+  header h1 {
+      font-size: 6rem;
+      padding: 0 6rem;
+      line-height: 1.1;
+      margin: 1rem 0 2rem 0;
+  }
+  .button {
+      margin-bottom: 1rem;
+  }
+  .fontur h1 {
+      font-size: 5rem;
+  }
+  .kort {
+    height:29rem; 
+    width: 32rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  .gluggi {  
+    height:26.3rem; 
+    width: 39rem;
+  }
+} 
